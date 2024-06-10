@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社彩纷呈 - 首页</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            color: #333;
+        }
+
+        header {
+            background-color: #c0392b;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        header .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-size: 36px;
+            font-family: 'ZCOOL XiaoWei', serif;
+        }
+
+        header .navbar-brand img {
+            height: 50px; /* 调整Logo的高度 */
+            margin-right: 10px; /* Logo与文字之间的间距 */
+        }
+
+        header .nav-link {
+            color: #fff !important;
+        }
+
+       .jumbotron {
+    background: url('C:\Users\偶\Pictures\Saved Pictures\背景.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    padding: 150px 0;
+    position: relative;
+}
+
+        .jumbotron:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 0;
+        }
+
+        .jumbotron .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .jumbotron h1 {
+            font-size: 64px;
+            font-family: 'ZCOOL XiaoWei', serif;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .jumbotron .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+        }
+
+        .features .feature {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .features .feature:hover {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .features .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .features .feature h3 {
+            font-size: 24px;
+            color: #c0392b;
+            font-family: 'ZCOOL XiaoWei', serif;
+        }
+
+        .features .feature p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+        }
+
+        .time-bank {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .time-bank h3 {
+            font-family: 'ZCOOL XiaoWei', serif;
+        }
+
+        .time-bank p {
+            font-size: 16px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#" onclick="showSection('home')">
+                    <img src="C:\Users\偶\Pictures\Saved Pictures\logo.jpg" alt="Logo">
+                    社彩纷呈
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home" onclick="showSection('home')">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" onclick="showSection('about')">关于我们</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services" onclick="showSection('services')">服务项目</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" onclick="showSection('contact')">联系方式</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq" onclick="showSection('faq')">常见问题</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news" onclick="showSection('news')">最新动态</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#timebank" onclick="showSection('timebank')">时间银行</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="home" class="jumbotron text-center section active">
+        <div class="container">
+            <h1 class="display-4">社彩纷呈</h1>
+            <p class="lead">连接你我，服务社会</p>
+            <a class="btn btn-primary btn-lg" href="#about" onclick="showSection('about')" role="button">了解更多</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="features" class="features row text-center section">
+            <div class="col-md-4">
+                <div class="feature">
+                    <img src="path/to/feature1.jpg" alt="高效连接">
+                    <h3>高效连接</h3>
+                    <p>建立高效连接平台，促进志愿服务资源的高效利用。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <img src="path/to/feature2.jpg" alt="提升服务质量">
+                    <h3>提升服务质量</h3>
+                    <p>提升社区服务质量，推动社区和学生的共同发展。</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature">
+                    <img src="path/to/feature3.jpg" alt="可持续发展">
+                    <h3>可持续发展</h3>
+                    <p>成为贵州地区最具影响力和可持续发展的志愿服务平台。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="my-5 section">            <h2>关于我们</h2>
+            <p>社彩纷呈是基于当今社会高校学生志愿需求与社会志愿服务需要而成立的一个公益志愿服务平台。我们的使命是通过建立高效连接平台，促进志愿服务资源的高效利用，提升社区服务质量，推动社区和学生的共同发展。我们的愿景是成为贵州地区最具影响力和可持续发展的志愿服务平台。</p>
+            <p>社彩纷呈的成立得到了广大高校和社会各界的大力支持。我们通过与多家高校和社区组织合作，搭建了一个高效、便捷的志愿服务平台，使高校学生能够更好地参与社会志愿服务活动，同时帮助社区解决实际问题，提升社区服务质量。</p>
+            <p>我们的团队由一群热爱公益、富有激情的志愿者组成，他们来自各行各业，有着丰富的志愿服务经验和强烈的社会责任感。我们相信，通过我们的努力，能够为社会带来积极的变化，为更多的人提供帮助和支持。</p>
+            <p>社彩纷呈不仅仅是一个志愿服务平台，更是一个交流、学习、成长的社区。我们为志愿者提供丰富的培训和发展机会，通过各种形式的志愿服务活动，提升志愿者的社会实践能力和综合素质，帮助他们在服务社会的同时，实现自我价值。</p>
+        </section>
+
+        <section id="services" class="my-5 section">
+            <h2>服务项目</h2>
+            <ul>
+                <li><strong>日常服务</strong></li>
+                <li>社区清洁服务： 志愿者每周末定期进行社区清洁，包括公园、街道和社区设施的清扫和维护。志愿者们将聚集在指定地点，使用提供的工具和装备，包括扫帚、垃圾袋和手套，清扫街道，清除社区公园和其他公共区域的垃圾。</li>
+                <li>老年陪伴服务： 志愿者定期拜访孤独老人，陪伴聊天，帮助日常事务，如购物、理发等。志愿者将与老年人建立联系，并根据他们的兴趣和需求定期进行拜访。他们可以提供简单的家务帮助，例如购买食物或其他日常用品，以及帮助清理家庭区域。</li>
+                <li>学生辅导服务：针对中小学生提供学业辅导和学习指导，特别是数学、语言、科学等课程。志愿者将与学生合作，提供个性化的辅导和学习支持。这些活动可能包括课后辅导小组或一对一的辅导会议，以帮助学生更好地理解和掌握课程内容。</li>
+                <li><strong>特别活动</strong></li>
+                <li>环保公益活动：组织各种环保活动，如植树节、垃圾分类宣传等，促进居民对环保的认知和参与。志愿者将参与公园和自然保护区的清洁和维护，与当地组织和政府合作，以改善空气质量和水源，并为当地居民提供教育和保护指导。</li>
+                <li>假日康复活动： 在假期组织康复活动，包括康复训练、康复体验等，帮助残疾人士康复和社会融合。志愿者将协助参与者进行疾病预防和康复项目，包括运动和饮食活动，以提高他们的体力和健康水平。<li
+                <li>社区文化节庆：策划并举办社区文化节庆活动，包括春节联欢晚会、中秋团圆晚会等。志愿者将与当地组织和团体合作，以支持社区历史和文化项目，通过艺术和艺术活动的编排来丰富社区文化经历。<li
+                <li><strong>服务评估</strong></li>
+                <li>通过调查问卷、访谈等形式对志愿服务进行评估，不断改进和提升服务质量。</li
+        <li><strong>服务评估</strong></li>
+        <li>通过调查问卷、访谈等形式对志愿服务进行评估，不断改进和提升服务质量。</li>
+    </ul>
+</section>
+
+<section id="contact" class="my-5 section">
+    <h2>联系方式</h2>
+    <div class="contact-info">
+        <ul>
+            <li>地址：贵州省贵阳市花溪区党武镇花溪大学城</li>
+            <li>电话：18601577380</li>
+            <li>邮箱：3243058838@qq.com</li>
+        </ul>
+    </div>
+</section>
+
+<section id="faq" class="my-5 section">
+    <h2>常见问题</h2>
+    <div class="faq-item">
+        <h3>我可以参与社彩纷呈的志愿者服务吗？</h3>
+        <p>是的，我们欢迎所有有志于为社区服务的志愿者加入我们的团队。您可以在我们的官网注册并报名。</p>
+    </div>
+    <div class="faq-item">
+        <h3>志愿服务的时间和地点如何安排？</h3>
+        <p>志愿服务的时间和地点会提前在我们微信公众号或者平台上公布，您可以根据自己的时间安排选择合适的活动。</div>
+    </div>
+    <div class="faq-item">
+</section>
+
+<section id="news" class="my-5 section">
+    <h2>最新动态</h2>
+    <div class="news-item">
+        <h3>“爱在重阳节·情暖十字街”文艺汇演</h3>
+        <p>近日，我们组织的社区志愿服务活动圆满结束，感谢所有志愿者的积极参与。</p>
+    </div>
+    <div class="news-item">
+        <h3>“垃圾分类跨新年·绿色环保迎元旦”十字街社区游园会</h3>
+        <p>上周，我们成功举办了新志愿者培训活动，为新加入的志愿者们提供了丰富的培训课程。</p>
+    </div>
+    <div class="news-item">
+        <h3>““快乐无价”——儿童友好社区主题活动会</h3>
+        <p>上周，我们成功举办了新志愿者培训活动，为新加入的志愿者们提供了丰富的培训课程。</p>
+    </div>
+    <div class="news-item">
+        <h3>“幸福敲门：暖心包、心愿包发放</h3>
+        <p>上周，我们成功举办了新志愿者培训活动，为新加入的志愿者们提供了丰富的培训课程。</p>
+    </div>
+    <div class="news-item">
+        <h3>“垃圾分类跨新年·绿色环保迎元旦”十字街社区游园会</h3>
+        <p>上周，我们成功举办了新志愿者培训活动，为新加入的志愿者们提供了丰富的培训课程。</p>
+    </div>
+    <div class="news-item">
+        <h3>“疫情之下，如何做好亲子陪伴</h3>
+        <p>上周，我们成功举办了新志愿者培训活动，为新加入的志愿者们提供了丰富的培训课程。</p>
+    </div>
+</section>
+
+<section id="timebank" class="my-5 section">
+    <div class="time-bank">
+        <h3>时间银行机制</h3>
+        <p>时间银行是一种创新的志愿服务模式，志愿者通过参与志愿服务积累时间，时间可以用来兑换社区服务或帮助其他志愿者。我们鼓励志愿者积极参与时间银行机制，共同推动社区发展。</p>
+        <p>如何参与时间银行？</p>
+        <ul>
+            <li>注册成为时间银行会员。</li>
+            <li>参与志愿服务并记录服务时间。</li>
+            <li>使用积累的时间兑换服务。</li>
+            <li>与其他志愿者互助，形成良性循环。</li>
+        </ul>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 社彩纷呈. 版权所有.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
